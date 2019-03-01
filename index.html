@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-            <title>
-                Document
-            </title>
-        </meta>
+        <meta charset="utf-8"/>
+        <title>
+            Document
+        </title>
+        <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"/>
+        <link href="css/style.css" rel="stylesheet"/>
     </head>
     <body>
+        <div class="wrapper">
+            <!-- Sidebar -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <img alt="" src="assets/persona.jpeg"/>
+                </div>
+                <ul class="list-unstyled components">
+                    <li>
+                        <a aria-expanded="false" data-toggle="collapse" href="#homeSubmenu">
+                            ACERCA DE MI
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            EXPERIENCIA
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-expanded="false" data-toggle="collapse" href="#pageSubmenu">
+                            EDUCACIÓN
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            HABILIDADES
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            CONTACTO
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Page Content -->
+            <div id="content">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <button class="btn btn-info" id="sidebarCollapse" type="button">
+                            <i class="fas fa-align-left">
+                            </i>
+                            <span>
+                                Toggle Sidebar
+                            </span>
+                        </button>
+                    </div>
+                </nav>
+                <!-- We'll fill this with dummy content -->
+                <!-- Acerca de mi -->
+                <!--Experiencia -->
+                <!--Educación -->
+                <!-- Habilidades -->
+                <!-- Contacto -->
+            </div>
+        </div>
+        <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+        </script>
+        <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+        </script>
+        <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+        </script>
+        <script src="js/app.js">
+        </script>
     </body>
 </html>
