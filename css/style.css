@@ -2,6 +2,9 @@
     display: flex;
     align-items: stretch;
 }
+.navbar {
+    padding-left: 0px;
+}
 #sidebar {
     min-width: 250px;
     max-width: 250px;
@@ -72,4 +75,19 @@ a, a:hover, a:focus {
     border-radius: 50%;
     width: 140px;
     height: 140px;
+}
+#linea {
+    border-bottom: 1px solid #999;
+}
+.container {
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+.btn-info {
+    background-color: #071013;
+    border-color: #071013;
+}
+.btn-info:hover {
+    background-color: #2D3047;
+    border-color: #2D3047;
 }
