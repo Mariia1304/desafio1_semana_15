@@ -1,0 +1,105 @@
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+}
+#content {
+    margin-left: 20vw;
+}
+.navbar {
+    padding-left: 0px;
+}
+#sidebar.active {
+    margin-left: -250px;
+}
+a[data-toggle="collapse"] {
+    position: relative;
+}
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        margin-left: 10vw;
+    }
+}
+/*
+    ADDITIONAL DEMO STYLE, NOT IMPORTANT TO MAKE THINGS WORK BUT TO MAKE IT A BIT NICER :)
+*/
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: #fafafa;
+}
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+#sidebar {
+    /* don't forget to add all the previously mentioned styles here too */
+    padding-top: 20vh;
+    background: #7CEA9C;
+    color: #2D3047;
+    transition: all 0.3s;
+}
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #7CEA9C;
+}
+#sidebar ul li a {
+    text-align: center;
+    font-weight: 600;
+    padding: 3px;
+    font-size: 1.2em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #FFFFFF;
+}
+#sidebar ul li.active>a, a[aria-expanded="true"] {
+    color: #2D3047;
+    background: #7CEA9C;
+}
+#sidebar img {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+#linea {
+    border-bottom: 1px solid #999;
+}
+.container {
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+.btn-info {
+    background-color: #071013;
+    border-color: #071013;
+}
+.btn-info:hover {
+    background-color: #2D3047;
+    border-color: #2D3047;
+}
